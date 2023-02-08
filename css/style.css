@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&family=Rubik+Mono+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 16px;
+}
+
+.header{
+  position: relative;
+}
+
+.header__imagen {
+  width: 100%;
+  position: absolute;
+}
+
+
+.header__titulo{
+  font-size: 4em;
+}
+
+.header__titulo--absolute{
+  position: absolute;
+  top: 20%
+}
+
+.header__titulo--cursiva{
+  font-size: 4rem;
+}
+
+
