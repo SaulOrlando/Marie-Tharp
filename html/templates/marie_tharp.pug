@@ -6,11 +6,26 @@ html(lang="es")
       meta(http-equiv="X-UA-Compatible", content="IE=edge")
       meta(name="viewport", content="width=device-width, initial-scale=1.0")
       meta(name="author", content="Salando")
-  body
+  body.container
     block header
       header.header
         picture
           img(src="../img/mapas.jpg", alt="mapa").header__imagen
-        h1.header__text--text-over-imagen.
-          La Vida y Legado de Marie Tharp, la Geóloga Marina
+        h1.header__text--text-over-imagen.block-flex-child.
+          La Vida y Legado de Marie Tharp.<br>La Geóloga Marina
+    block article
+      article.article
+        h2.text.text--title.block-flex-child ¿Quien fue Marie Tharp?
+        p.text.block-flex-child.
+          Fue una <span title="Científico que estudia la estructura, composición, procesos y historia de la Tierra" class="text | text--decoration">geóloga</span> y
+          <span title="Profesional que se encarga de crear mapas y representaciones visuales precisas y detalladas de la superficie terrestre" class="text | text--decoration">cartógrafa</span> oceanográfica estadounidense que junto con
+          <span class="text | text--bold">Bruce Heezen</span>
+          ayudo a descubrir la existencia de una cadena montañosa que se extiende por el lecho del océano Atlántico,
+          logrando poner en manifiesto la dorsal mesoatlántica, tal hazaña sirvío para crear el primer mapa mundial
+          de los fondos oceánicos.
+        p.text.block-flex-child.
+          Estos descubrimientos ayudaron a la compresión de la teoria de la
+          <span class="text | text--cursive">deriva continental</span>
+          teoria desarrollada en 1920 por <span class="text | text--cursive">Alfred Wegener</span>.
+
 

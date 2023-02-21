@@ -1,11 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Rubik+Mono+One&display=swap');
 
 *{
   margin: 0;
   padding: 0;
-  font-family: 'Rubik Mono One', sans-serif;
+  font-family: "Raleway", sans-serif, cursive, sans-serif;
   font-size: 16px;
   box-sizing: border-box;
+}
+
+.container{
+  display: flex;
+  gap: 40px 0;
+  flex-flow: row wrap;
 }
 
 .texto-encima{
@@ -14,4 +20,60 @@
   height: 100%;
 }
 
+.header{
+  display: block;
+  width: 100%;
+  height: 100vh;
+}
 
+.header__imagen{
+  width: 100%;
+  height: 100vh;
+}
+
+.header__text--text-over-imagen{
+  position: absolute;
+  font-family: "Rubik Mono One", cursive, sans-serif;
+  top:50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  text-shadow: 0 3px #f00;
+  /* white-space: nowrap; */
+}
+
+.article{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: 40px 0;
+}
+
+.text{
+  line-height: 32px;
+}
+
+.text--title{
+  text-align: center;
+  font-family: "Rubik Mono One", cursive, sans-serif;
+  font-size: 2.25rem;
+}
+
+.text--decoration{
+  text-decoration: underline;
+}
+
+.text--bold{
+  font-weight: bold;
+}
+
+.text--cursive{
+  font-style:italic;
+}
+
+.block-flex-child{
+  display: block;
+  width: 80%;
+}
