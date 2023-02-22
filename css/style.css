@@ -69,11 +69,27 @@
   font-weight: bold;
 }
 
-.text--cursive{
-  font-style:italic;
+.text--no-link{
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
+  cursor: pointer;
 }
 
+.text--cursive{
+  font-style: italic;
+}
+
+.block-flex{
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px 0;
+}
+
+
 .block-flex-child{
+  padding: 8px;
   display: block;
   width: 80%;
 }
+
