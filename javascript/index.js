@@ -10,14 +10,14 @@ let dark_mode = false
 function check_dark_mode(){
   if (!dark_mode){
     activate_dark_mode()
-    dark_mode = true
   }else {
     activate_light_mode()
-    dark_mode = false
   }
 }
 
 function activate_dark_mode(){
+  dark_mode = true
+
   container.style.transition = "all 0.2s ease"
   container.style.background = "#000"
   container.style.color = "#fff"
@@ -32,6 +32,8 @@ function activate_dark_mode(){
 }
 
 function activate_light_mode(){
+  dark_mode = false
+
   container.style.transition = "all 0.2s ease"
   container.style.background = "#fff"
   container.style.color = "#000"
