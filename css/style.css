@@ -8,6 +8,15 @@
   box-sizing: border-box;
 }
 
+#conclusion{
+  margin-bottom: 12px ;
+}
+
+::selection{
+  background: #143242;
+  color: #fff;
+}
+
 .container {
   display: flex;
   gap: 40px 0;
@@ -59,6 +68,10 @@
   line-height: 2rem;
 }
 
+.text--center{
+  text-align: center;
+}
+
 .text--title {
   text-align: center;
   font-family: "Rubik Mono One", cursive, sans-serif;
@@ -87,9 +100,12 @@
 .block-flex {
   display: flex;
   flex-flow: column nowrap;
-  gap: 1.25rem 0;
+  gap: 0.75rem;
 }
 
+.block-flex--gap{
+  gap: 2rem;
+}
 
 .block-flex-child {
   padding: 0.5rem;
@@ -106,12 +122,31 @@
 .aside__link {
   display: block;
   text-decoration: none;
-  color: #0e6206;
   padding: 0.5rem;
 }
 
-.aside__link:hover {
+.aside__link--color{
+  color: #0e6206;
+}
+
+.aside__link--color2{
+  color: #fff;
+}
+
+.aside__link--transition{
+  transition: color 0.1s ease;
+}
+
+.aside__link--transition:hover {
   text-decoration: underline;
+}
+
+.aside__link--transition--color:hover{
+  color: #ad8215;
+}
+
+.aside__link--transition--color2:hover{
+  color: #aaa;
 }
 
 .box {
@@ -136,4 +171,40 @@
 .img {
   height: 100%;
 }
+
+.img--leyenda{
+  margin: 0.5rem 0;
+}
+
+.float-element{
+  position: fixed;
+  top: 1rem;
+  right: 1.25rem;
+}
+
+.icon--light{
+  width: 1.75rem;
+  cursor: pointer;
+}
+
+.not-selectable{
+  user-select: none;
+}
+
+.footer{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 85% 15%;
+  padding: 0.25rem;
+}
+
+.footer--background-blue{
+  background:  #2e1b47;
+  color: #fff;
+}
+
+.footer__p{
+  padding: 0.75rem;
+}
+
 

@@ -8,15 +8,18 @@ html(lang="es")
       meta(name="author", content="Salando")
   body.container
     block header
+      div.float-element
+        picture
+          img(src="../icons/light.svg", alt="icon light").icon--light.not-selectable.icon
       header.header#inicio
         picture
-          img(src="../img/mapas.jpg", alt="mapa").header__imagen
+          img(src="../img/mapas.jpg", alt="mapa").header__imagen.not-selectable
         h1.header__text--text-over-imagen.block-flex-child.
           La Vida y Legado de Marie Tharp.<br>La Geóloga Marina
     block article
       main.block-flex
         section.grid
-          article.article#inicio
+          article.article#marie
             h2.text.text--title.block-flex-child ¿Quién fue Marie Tharp?
             p.text.block-flex-child.
               Fue una <span title="Científico que estudia la estructura, composición, procesos y historia de la Tierra" class="text | text--decoration">geóloga</span> y
@@ -33,18 +36,18 @@ html(lang="es")
               <span class="text | text--cursive">deriva continental</span>
               teoria desarrollada por el alemán <a class="text | text--bold | text--no-link" title="Meteorólogo y geofísico, fue uno de los padres de la geología moderna al proponer la teoría de la deriva continental. Nacido en Berlin, el primero de noviembre de 1880" href="https://es.wikipedia.org/wiki/Alfred_Wegener">Alfred Wegener</a> en 1920.
           aside.aside
-            a(href="#inicio").aside__link Inicio
-            a(href="#marie").aside__link ¿Quién es Marie Tharp?
-            a(href="#biografia").aside__link Biografía
-            a(href="#conclusion").aside__link Conclusión
+            a(href="#inicio").aside__link.aside__link--color.aside__link--transition.aside__link--transition--color Inicio
+            a(href="#marie").aside__link.aside__link--color.aside__link--transition.aside__link--transition--color ¿Quién es Marie Tharp?
+            a(href="#biografia").aside__link.aside__link--color.aside__link--transition.aside__link--transition--color Biografía
+            a(href="#conclusion").aside__link.aside__link--color.aside__link--transition.aside__link--transition--color Conclusión
         article.article#biografia
           h2.text.text--title.block-flex-child.
             Biografía
           div.box
             figure.container--img
                 picture
-                  img(src="../img/marie tharp.jpg", alt="Marie Tharp", load="lazy").img
-                figcaption Imagen de Marie Tharp
+                  img(src="../img/marie tharp.jpg", alt="Marie Tharp", load="lazy").img.not-selectable
+                figcaption.img--leyenda Imagen de Marie Tharp
             div.box2
               p.text.block-flex-child.
                 Marie Tharp nació el 30 de julio de 1920 en Ypsilanti, Michigan.
@@ -72,16 +75,33 @@ html(lang="es")
             Mismo que fue toda una revolución porque la mayoría creía que el fondo de el mar era llano y fangoso.
             Sin embargo los dibujos, probaban que en el fondo de el mar existen los relieves y que además podrian llegar a ser
             más grandes que los que hay en la superficie.
-          p.text.block-flex-child.
-            Marie siguió trabajando en la facultad de la Universidad de Columbia hasta 1983.
           div.block-flex-child
             figure.container--img
               picture
-                img(src="../img/mapa de heezen y tharp.jpg", alt="cuadro de la dorsal medio oceánica", load="lazy")
-              figcaption Cuadro de la dorsal medio oceánica basado en los perfiles cientificos de Marie Tharp y Bruce Heezen (1977)
+                img(src="../img/mapa de heezen y tharp.jpg", alt="cuadro de la dorsal medio oceánica", load="lazy").not-selectable
+              figcaption.img--leyenda Cuadro de la dorsal medio oceánica basado en los perfiles cientificos de Marie Tharp y Bruce Heezen (1977)
           p.text.block-flex-child.
             Marie falleció de cáncer a la edad de 86 años el 23 de agosto de 2006 en Nyack, Nueva York, Estados Unidos.
         article.article#conclusion
           h2.text.text--title Conclusión
           p.text.block-flex-child.
             Marie Tharp fue una geóloga y cartógrafa que dedicó su vida a la exploración del fondo oceánico y cuyo trabajo fue fundamental para la comprensión de la tectónica de placas y la formación del relieve submarino. Su legado sigue siendo relevante hoy en día, inspirando a nuevas generaciones de mujeres científicas y recordándonos que la exploración y el descubrimiento continúan siendo una parte fundamental del avance de la ciencia.
+      footer.footer.footer--background-blue
+        div.block-flex.block-flex--gap
+          p.text.text--center Iconos
+          p.footer__p
+            | Light Icon by
+            a(href="https://iconscout.com/contributors/daniel-bruce").text--no-link  Daniel Bruce
+            |  on
+            a(href="https://iconscout.com").text--no-link  IconScout
+          p.footer__p
+            a(href="https://www.flaticon.es/iconos-gratis/pirata" title="pirata iconos").text--no-link Pirata iconos creados por Ehtisham Abid - Flaticon
+        div.block-flex
+          p.text.text--center Explorar
+          div.block-flex
+            a(href="#inicio").aside__link.aside__link--color2.aside__link--transition.aside__link--transition--color2 Inicio
+            a(href="#marie").aside__link.aside__link--transition.aside__link--transition--color2.aside__link--color2 ¿Quién es Marie Tharp?
+            a(href="#biografia").aside__link.aside__link--transition.aside__link--transition--color2.aside__link--color2 Biografía
+            a(href="#conclusion").aside__link.aside__link--transition.aside__link--transition--color2.aside__link--color2 Conclusión
+
+
