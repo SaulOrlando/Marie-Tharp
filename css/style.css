@@ -78,10 +78,6 @@
   font-size: 2.25rem;
 }
 
-.text--decoration {
-  text-decoration: underline;
-}
-
 .text--bold {
   font-weight: bold;
 }
@@ -95,6 +91,10 @@
 
 .text--cursive {
   font-style: italic;
+}
+
+.text--decoration {
+  text-decoration: underline;
 }
 
 .block-flex {
