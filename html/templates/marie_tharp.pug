@@ -8,9 +8,9 @@ html(lang="es")
       meta(name="author", content="Salando")
   body.container
     block header
-      div.float-element
+      div.float-element#btn-dark
         picture
-          img(src="../icons/light.svg", alt="icon light").icon--light.not-selectable.icon
+          img(src="../icons/light.svg", alt="icon light").icon--light.not-selectable.icon#icon-dark-mode
       header.header#inicio
         picture
           img(src="../img/mapas.jpg", alt="mapa").header__imagen.not-selectable
@@ -86,22 +86,24 @@ html(lang="es")
           h2.text.text--title Conclusión
           p.text.block-flex-child.
             Marie Tharp fue una geóloga y cartógrafa que dedicó su vida a la exploración del fondo oceánico y cuyo trabajo fue fundamental para la comprensión de la tectónica de placas y la formación del relieve submarino. Su legado sigue siendo relevante hoy en día, inspirando a nuevas generaciones de mujeres científicas y recordándonos que la exploración y el descubrimiento continúan siendo una parte fundamental del avance de la ciencia.
-      footer.footer.footer--background-blue
-        div.block-flex.block-flex--gap
-          p.text.text--center Iconos
-          p.footer__p
-            | Light Icon by
-            a(href="https://iconscout.com/contributors/daniel-bruce").text--no-link  Daniel Bruce
-            |  on
-            a(href="https://iconscout.com").text--no-link  IconScout
-          p.footer__p
-            a(href="https://www.flaticon.es/iconos-gratis/pirata" title="pirata iconos").text--no-link Pirata iconos creados por Ehtisham Abid - Flaticon
-        div.block-flex
-          p.text.text--center Explorar
+      block footer
+        footer.footer.footer--background-pink
+          div.block-flex.block-flex--gap
+            p.text.text--center Iconos
+            p.footer__p
+              | Light Icon by
+              a(href="https://iconscout.com/contributors/daniel-bruce").text--no-link  Daniel Bruce
+              |  on
+              a(href="https://iconscout.com").text--no-link  IconScout
+            p.footer__p
+              a(href="https://www.flaticon.es/iconos-gratis/pirata" title="pirata iconos").text--no-link Pirata iconos creados por Ehtisham Abid - Flaticon
           div.block-flex
-            a(href="#inicio").aside__link.aside__link--color2.aside__link--transition.aside__link--transition--color2 Inicio
-            a(href="#marie").aside__link.aside__link--transition.aside__link--transition--color2.aside__link--color2 ¿Quién es Marie Tharp?
-            a(href="#biografia").aside__link.aside__link--transition.aside__link--transition--color2.aside__link--color2 Biografía
-            a(href="#conclusion").aside__link.aside__link--transition.aside__link--transition--color2.aside__link--color2 Conclusión
+            p.text.text--center Explorar
+            div.block-flex
+              a(href="#inicio").aside__link.aside__link--color2.aside__link--transition.aside__link--transition--color2 Inicio
+              a(href="#marie").aside__link.aside__link--transition.aside__link--transition--color2.aside__link--color2 ¿Quién es Marie Tharp?
+              a(href="#biografia").aside__link.aside__link--transition.aside__link--transition--color2.aside__link--color2 Biografía
+              a(href="#conclusion").aside__link.aside__link--transition.aside__link--transition--color2.aside__link--color2 Conclusión
+        script(src="../javascript/index.js")
 
 
