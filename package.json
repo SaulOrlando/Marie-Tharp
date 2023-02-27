@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "jstransformer-markdown-it": "^3.0.0"
+    "jstransformer-markdown-it": "^3.0.0",
+    "pug": "^3.0.2"
   }
 }

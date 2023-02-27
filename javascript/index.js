@@ -21,7 +21,7 @@ function activate_dark_mode(){
   container.style.transition = "all 0.2s ease"
   container.style.background = "#000"
   container.style.color = "#fff"
-  icon_dark_mode.setAttribute("src", "../icons/sun.svg")
+  icon_dark_mode.setAttribute("src", "../icons/sol gris.svg")
 
   footer.style.background = "#2e1b47"
   footer.style.color = "#fff"
@@ -37,7 +37,7 @@ function activate_light_mode(){
   container.style.transition = "all 0.2s ease"
   container.style.background = "#fff"
   container.style.color = "#000"
-  icon_dark_mode.setAttribute("src", "../icons/light.svg")
+  icon_dark_mode.setAttribute("src", "../icons/sun_light.svg")
 
   footer.style.background = "#9b59b6"
   footer.style.color = "#000"
