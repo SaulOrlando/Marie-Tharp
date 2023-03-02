@@ -12,6 +12,10 @@
   margin-bottom: 12px;
 }
 
+#img--marie {
+  width: 100%;
+}
+
 ::-moz-selection {
   background: #143242;
   color: #fff;
@@ -72,6 +76,7 @@
 
 .text {
   line-height: 2rem;
+  font-size: 1rem;
 }
 
 .text--center {
@@ -119,6 +124,12 @@
   width: 90%;
 }
 
+.block-flex-child2 {
+  padding: 0.5rem;
+  display: block;
+  width: 100%;
+}
+
 .aside {
   display: flex;
   flex-flow: column nowrap;
@@ -156,18 +167,32 @@
   flex-flow: row nowrap;
   width: 90%;
   gap: 1.25rem;
-  height: 60vh;
 }
 
 .box2 {
   display: flex;
   flex-flow: column nowrap;
   gap: 1.25rem;
+  margin: 0.5rem;
 }
 
 .container--img {
   display: block;
   text-align: center;
+}
+
+.container--img2 {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.container--img3 {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  align-items: center;
 }
 
 .img {
@@ -206,4 +231,30 @@
 .footer--background-pink {
   background: #9b59b6;
   color: #000;
+}
+
+.oculto {
+  display: none;
+}
+
+.mostrar {
+  display: block;
+}
+
+@media (max-width: 950px) {
+  .grid {
+    grid-template-columns: 100%;
+  }
+
+  .container--img2 {
+    display: none;
+  }
+
+  .aside {
+    display: none;
+  }
+
+  .header__text--text-over-imagen {
+    font-size: 3.25rem;
+  }
 }

@@ -44,22 +44,27 @@ html(lang="es")
           h2.text.text--title.block-flex-child.
             Biografía
           div.box
-            figure.container--img
+            figure.container--img2
                 picture
-                  img(src="../img/marie tharp.jpg", alt="Marie Tharp", load="lazy").img.not-selectable
+                  img(src="../img/marie tharp.jpg", alt="Marie Tharp", load="lazy").img.not-selectable#img--marie
                 figcaption.img--leyenda Imagen de Marie Tharp
             div.box2
-              p.text.block-flex-child.
+              p.text.block-flex-child.responsive--950.
                 Marie Tharp nació el 30 de julio de 1920 en Ypsilanti, Michigan.
                 Su padre, William, la introdujo desde temprano en la cartografía, ya que el trabajaba haciendo mapas de clasificación de suelos
                 para el Departamento de Agricultura de los Estados Unidos.
                 Y su madre, Bertha, era profesora de alemán y latín.
-              p.text.block-flex-child.
+              p.text.block-flex-child.responsive--950.
                 Marie se graduó en la Universidad de Ohio con grados de bachelor en inglés y música,
                 Más tarde recibió el grado master en geología en la Universidad de Míchigan,
                 y por ultimo obtuvo un grado en matemáticas por la Universidad de Tulane.
                 <br>
                 Empezó a trabajar como geóloga en una compañía petrolera y más tarde se trasladó a Nueva York, donde se incorporó en la Universidad de Columbia. lo que la convirtió en <span class="text | text--bold"> la primera mujer en trabajar en un laboratorio geológico</span>. Allí conoció al geólogo marino <span class="text | text--bold">Bruce Heezen</span>, con quien colaboró en varios proyectos.
+              div#box_img_marie_and_bruce.box2.oculto
+                figure.container--img3
+                  picture
+                    img(src="../img/Bruce Heezen y Marie tharp trabajando.jpg", alt="Brece Heezen y Marie Tharp trabajando", load="lazy")#img--marie-and-bruce.not-selectable.img
+                  figcaption Bruce Heezen y Marie Tharp trabajando
           p.text.block-flex-child.
             Sin embargo, <span title="No fue hasta 1965, cuando tenía 45 años, que Marie Tharp pudo embarcar por primera vez" class="text | text--decoration">Marie contaba con una limitación a la hora de hacer sus mapas, no se admitía a mujeres en barcos de investigacion, por lo que Marie hacie sus mapas en base a los datos que recolectaba Heezen de sus expediciones.</span>
             A pesar de tener datos limitados, su habilidad en matemáticas le permitió estimar o
@@ -110,6 +115,7 @@ html(lang="es")
               a(href="#marie").aside__link.aside__link--transition.aside__link--transition--color2.aside__link--color2 ¿Quién es Marie Tharp?
               a(href="#biografia").aside__link.aside__link--transition.aside__link--transition--color2.aside__link--color2 Biografía
               a(href="#conclusion").aside__link.aside__link--transition.aside__link--transition--color2.aside__link--color2 Conclusión
+        script(src="../javascript/functions.js")
         script(src="../javascript/index.js")
 
 

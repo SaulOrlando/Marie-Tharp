@@ -1,51 +1,22 @@
 const btn_dark = document.getElementById("btn-dark")
 const container = document.querySelector(".container")
-const icon_dark_mode = document.querySelector("#icon-dark-mode")
-
 const footer = document.querySelector(".footer")
 const footer_links = document.querySelectorAll(".aside__link--color2")
+const parrafos_responsivos_950 = document.querySelectorAll(".responsive--950")
+
+
+const icon_dark_mode = document.querySelector("#icon-dark-mode")
+const img_marie = document.getElementById("img--marie")
+const img_marie_and_bruce = document.getElementById("img--marie-and-bruce")
+const box_img_marie_and_bruce = document.getElementById("box_img_marie_and_bruce")
 
 let dark_mode = false
 
-function check_dark_mode(){
-  if (!dark_mode){
-    activate_dark_mode()
-  }else {
-    activate_light_mode()
-  }
-}
-
-function activate_dark_mode(){
-  dark_mode = true
-
-  container.style.transition = "all 0.2s ease"
-  container.style.background = "#000"
-  container.style.color = "#fff"
-  icon_dark_mode.setAttribute("src", "../icons/sol gris.svg")
-
-  footer.style.background = "#2e1b47"
-  footer.style.color = "#fff"
-
-  for (let link of footer_links){
-    link.style.color = "#fff"
-  }
-}
-
-function activate_light_mode(){
-  dark_mode = false
-
-  container.style.transition = "all 0.2s ease"
-  container.style.background = "#fff"
-  container.style.color = "#000"
-  icon_dark_mode.setAttribute("src", "../icons/sun_light.svg")
-
-  footer.style.background = "#9b59b6"
-  footer.style.color = "#000"
-
-  for (let link of footer_links){
-    link.style.color = "#000"
-  }
-}
-
 btn_dark.addEventListener("click", check_dark_mode)
+
+window.addEventListener("resize", responsive_gt_950)
+
+window.addEventListener("DOMContentLoaded", responsive_950)
+
+window.addEventListener("resize", responsive_950)
 
