@@ -13,6 +13,7 @@ function activate_dark_mode(){
   container.style.background = "#000"
   container.style.color = "#fff"
   icon_dark_mode.setAttribute("src", "../icons/sol gris.svg")
+  menu_desplegable_img.setAttribute("src", "../icons/menu2.svg")
 
   footer.style.background = "#2e1b47"
   footer.style.color = "#fff"
@@ -29,6 +30,7 @@ function activate_light_mode(){
   container.style.background = "#fff"
   container.style.color = "#000"
   icon_dark_mode.setAttribute("src", "../icons/sun_light.svg")
+  menu_desplegable_img.setAttribute("src", "../icons/menu.svg")
 
   footer.style.background = "#9b59b6"
   footer.style.color = "#000"
@@ -36,6 +38,17 @@ function activate_light_mode(){
   for (let link of footer_links){
     link.style.color = "#000"
   }
+}
+
+function menu_visible() {
+  // TODO me falta que cuando se le de un click a un link se cierre el menu de hamburguesa
+  menu_desplegable.classList.toggle("menu-desplegable__list--visible")
+
+  btn_dark.classList.toggle("oculto")
+
+  bloque_menu_desplegable.classList.toggle("menu-desplegable--activo")
+
+  boton_menu_desplegable.classList.toggle("menu-desplegable__btn--activo")
 }
 
 function responsive_950() {

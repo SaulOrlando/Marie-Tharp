@@ -11,6 +11,18 @@ html(lang="es")
       div.float-element#btn-dark
         picture
           img(src="../icons/sun_light.svg", alt="icon light").icon--light.not-selectable.icon#icon-dark-mode
+      div.menu-desplegable
+        button#menu-desplegable-btn.menu-desplegable__btn
+          picture: img(src="../icons/menu.svg", alt="icon menu")#menu-desplegable-img.menu-desplegable__btn__img
+        ul.menu-desplegable__list
+          li
+            a(href="#inicio").menu-desplegable__list__element Inicio
+          li
+            a(href="#marie").menu-desplegable__list__element ¿Quién es Marie Tharp?
+          li
+            a(href="#biografia").menu-desplegable__list__element Biografía
+          li
+            a(href="#conclusion").menu-desplegable__list__element conclusion
       header.header#inicio
         picture
           img(src="../img/mapas.jpg", alt="mapa").header__imagen.not-selectable
@@ -108,6 +120,8 @@ html(lang="es")
             p
               a(href="https://www.flaticon.es/iconos-gratis/navegacion" title="navegación iconos").text--no-link.
                 Navegación iconos creados por Vitaly Gorbachev - Flaticon
+            p: a(href="https://iconscout.com/contributors/egor-polyakov" title="menu icons"  target="_blank").text--no-link.
+              Menu Icon by Egor Polyakov
           div.block-flex
             p.text.text--center Explorar
             div.block-flex
