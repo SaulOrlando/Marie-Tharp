@@ -2,6 +2,7 @@ const container = document.querySelector(".container")
 const footer = document.querySelector(".footer")
 const menu_desplegable = document.querySelector(".menu-desplegable__list")
 const bloque_menu_desplegable = document.querySelector(".menu-desplegable")
+const header__imagen = document.querySelector(".header__imagen")
 
 const footer_links = document.querySelectorAll(".aside__link--color2")
 const parrafos_responsivos_950 = document.querySelectorAll(".responsive--950")
@@ -23,6 +24,8 @@ btn_dark.addEventListener("click", check_dark_mode)
 
 window.addEventListener("resize", responsive_gt_950)
 
+window.addEventListener("DOMContentLoaded", cargar_imagen_no_map)
+
 window.addEventListener("DOMContentLoaded", responsive_950)
 
 window.addEventListener("resize", responsive_950)
@@ -30,3 +33,7 @@ window.addEventListener("resize", responsive_950)
 for (let link of links_menu_desplegable){
   link.addEventListener("click", menu_visible)
 }
+
+window.addEventListener("resize", picture_mobile)
+
+window.addEventListener("DOMContentLoaded", picture_mobile)

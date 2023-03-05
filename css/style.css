@@ -43,12 +43,7 @@ figure {
   display: flex;
   gap: 40px 0;
   flex-flow: row wrap;
-}
-
-.texto-encima {
-  background: url("../img/mapas.jpg");
-  width: 100%;
-  height: 100%;
+  overflow-x: hidden;
 }
 
 .header {
@@ -134,7 +129,7 @@ figure {
 }
 
 .menu-desplegable__list__element:hover {
-  background: #4dc5;
+  background: rgba(71, 223, 205, 0.333);
 }
 
 .grid {
@@ -301,8 +296,9 @@ figure {
 .footer {
   display: grid;
   width: 100%;
-  grid-template-columns: 85% 15%;
+  grid-template-columns: 85% 1fr;
   padding: 0.25rem;
+  overflow-x: hidden;
 }
 
 .footer--background-pink {
@@ -340,8 +336,12 @@ figure {
   }
 }
 
-@media (max-width: 700px) {
-  .texto-encima {
+  @media (max-width: 700px) {
+  .header__text--text-over-imagen{
+    font-size: 3rem;
+  }
+
+  .header__imagen {
     -o-object-fit: cover;
     object-fit: cover;
   }
@@ -361,5 +361,64 @@ figure {
 
   .footer {
     padding: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  html{
+    font-size: 20px;
+  }
+
+  .header__text--text-over-imagen {
+    font-size: 2.75rem;
+  }
+
+  .text--title {
+    font-size: 2rem;
+  }
+
+  .footer{
+    padding: 8px;
+    grid-template-columns: 75% 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+  .header__text--text-over-imagen{
+    font-size: 2.50rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .header__text--text-over-imagen {
+    font-size: 2.25rem;
+  }
+
+  .text--title {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 370px) {
+  html{
+    font-size: 16px;
+  }
+
+  .header__text--text-over-imagen {
+    font-size: 2.50rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .footer{
+    padding: 0;
+    grid-template-columns: 60% 1fr;
+    text-align: center;
+  }
+}
+
+@media (max-width: 300px) {
+  .header__text--text-over-imagen{
+    font-size: 2.25rem;
   }
 }
