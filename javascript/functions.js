@@ -41,7 +41,13 @@ function activate_light_mode(){
 }
 
 function menu_visible() {
-  // TODO me falta que cuando se le de un click a un link se cierre el menu de hamburguesa
+
+  if (dark_mode){
+    for (let link of links_menu_desplegable){
+      link.style.color = "#000"
+    }
+  }
+
   menu_desplegable.classList.toggle("menu-desplegable__list--visible")
 
   btn_dark.classList.toggle("oculto")
@@ -49,6 +55,7 @@ function menu_visible() {
   bloque_menu_desplegable.classList.toggle("menu-desplegable--activo")
 
   boton_menu_desplegable.classList.toggle("menu-desplegable__btn--activo")
+
 }
 
 function responsive_950() {

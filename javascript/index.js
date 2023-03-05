@@ -28,6 +28,5 @@ window.addEventListener("DOMContentLoaded", responsive_950)
 window.addEventListener("resize", responsive_950)
 
 for (let link of links_menu_desplegable){
-  // TODO hacer funcion de menu desplegable
-  link.addEventListener("click", ocultar_menu_desplegable)
+  link.addEventListener("click", menu_visible)
 }

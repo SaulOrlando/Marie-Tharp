@@ -6,13 +6,18 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth;
   font-family: "Raleway", sans-serif, cursive, sans-serif;
   font-size: 16px;
 }
 
-img, video, picture, iframe, picture, figure {
+img,
+video,
+picture,
+iframe,
+picture,
+figure {
   max-width: 100%;
 }
 
@@ -75,6 +80,9 @@ img, video, picture, iframe, picture, figure {
   position: fixed;
   top: 1rem;
   left: 1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   transition: all 0.3s ease;
   z-index: 2;
@@ -99,7 +107,7 @@ img, video, picture, iframe, picture, figure {
   width: 2rem;
 }
 
-.menu-desplegable__btn--activo{
+.menu-desplegable__btn--activo {
   background: #42d1c7;
   padding: 12px;
 }
@@ -118,10 +126,15 @@ img, video, picture, iframe, picture, figure {
 
 .menu-desplegable__list__element {
   display: block;
-  padding: 12px;
+  padding: 20px;
   text-align: center;
   text-decoration: none;
   color: inherit;
+  transition: background 0.2s ease;
+}
+
+.menu-desplegable__list__element:hover {
+  background: #4dc5;
 }
 
 .grid {
@@ -310,7 +323,7 @@ img, video, picture, iframe, picture, figure {
     grid-template-columns: 100%;
   }
 
-  .menu-desplegable{
+  .menu-desplegable {
     display: block;
   }
 
@@ -327,16 +340,17 @@ img, video, picture, iframe, picture, figure {
   }
 }
 
-@media (max-width: 700px){
+@media (max-width: 700px) {
   .texto-encima {
+    -o-object-fit: cover;
     object-fit: cover;
   }
 
-  #box_img_marie_and_bruce{
+  #box_img_marie_and_bruce {
     width: 90%;
   }
 
-  #img--marie-and-bruce{
+  #img--marie-and-bruce {
     width: 100%;
   }
 
@@ -345,7 +359,7 @@ img, video, picture, iframe, picture, figure {
     align-items: center;
   }
 
-  .footer{
+  .footer {
     padding: 12px;
   }
 }
