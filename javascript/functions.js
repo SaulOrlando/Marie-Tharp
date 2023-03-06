@@ -12,8 +12,8 @@ function activate_dark_mode(){
   container.style.transition = "all 0.2s ease"
   container.style.background = "#000"
   container.style.color = "#fff"
-  icon_dark_mode.setAttribute("src", "../icons/sol gris.svg")
-  menu_desplegable_img.setAttribute("src", "../icons/menu2.svg")
+  icon_dark_mode.setAttribute("src", "icons/sol_gris.svg")
+  menu_desplegable_img.setAttribute("src", "icons/menu2.svg")
 
   footer.style.background = "#2e1b47"
   footer.style.color = "#fff"
@@ -29,8 +29,8 @@ function activate_light_mode(){
   container.style.transition = "all 0.2s ease"
   container.style.background = "#fff"
   container.style.color = "#000"
-  icon_dark_mode.setAttribute("src", "../icons/sun_light.svg")
-  menu_desplegable_img.setAttribute("src", "../icons/menu.svg")
+  icon_dark_mode.setAttribute("src", "icons/sun_light.svg")
+  menu_desplegable_img.setAttribute("src", "icons/menu.svg")
 
   footer.style.background = "#9b59b6"
   footer.style.color = "#000"
@@ -78,8 +78,8 @@ function responsive_gt_950() {
 
 function picture_mobile (){
   if (window.innerWidth <= 380){
-    header__imagen.setAttribute("src", "../img/picture.jpg")
+    header__imagen.setAttribute("src", "img/picture.jpg")
   }else {
-    header__imagen.setAttribute("src", "../img/mapas.jpg")
+    header__imagen.setAttribute("src", "img/mapas.jpg")
   }
 }
