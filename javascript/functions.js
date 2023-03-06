@@ -76,16 +76,10 @@ function responsive_gt_950() {
   }
 }
 
-function cargar_imagen_no_map() {
-  if (window.innerWidth <= 380 && window.innerWidth >= 360) {
-    header__imagen.setAttribute("src", "../img/marco.jpg")
+function picture_mobile (){
+  if (window.innerWidth <= 380){
+    header__imagen.setAttribute("src", "../img/picture.jpg")
   }else {
     header__imagen.setAttribute("src", "../img/mapas.jpg")
-  }
-}
-
-function picture_mobile (){
-  if (window.innerWidth < 360){
-    header__imagen.setAttribute("src", "../img/picture.jpg")
   }
 }

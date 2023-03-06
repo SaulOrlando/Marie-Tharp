@@ -24,8 +24,6 @@ btn_dark.addEventListener("click", check_dark_mode)
 
 window.addEventListener("resize", responsive_gt_950)
 
-window.addEventListener("DOMContentLoaded", cargar_imagen_no_map)
-
 window.addEventListener("DOMContentLoaded", responsive_950)
 
 window.addEventListener("resize", responsive_950)

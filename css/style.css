@@ -417,7 +417,7 @@ figure {
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 320px) {
   .header__text--text-over-imagen{
     font-size: 2.25rem;
   }
