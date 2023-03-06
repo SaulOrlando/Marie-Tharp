@@ -25,6 +25,7 @@ figure {
   margin-bottom: 12px;
 }
 
+/* Para quitar marca de agua */
 #ultimo + div{
   visibility: hidden;
 }
