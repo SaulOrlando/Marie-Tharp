@@ -25,6 +25,10 @@ figure {
   margin-bottom: 12px;
 }
 
+#ultimo + div{
+  visibility: hidden;
+}
+
 #img--marie {
   width: 100%;
 }
