@@ -1,4 +1,3 @@
 node_modules
-package.json
-img
-icons
+package-lock.json
+/assets
