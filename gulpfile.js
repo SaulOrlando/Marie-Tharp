@@ -3,7 +3,7 @@ const pug = require('gulp-pug')
 
 gulp.task('pug', () => {
   return gulp
-    .src('./src/pages/*.pug')
+    .src('./src/pages/**/.*pug')
     .pipe(pug({
       pretty: true
     }))
@@ -20,7 +20,7 @@ gulp.task('pug-index', () => {
 })
 
 gulp.task('default', () => {
-  gulp.watch('./src/pages/*.pug', gulp.series('pug'))
+  gulp.watch('./src/pages/**/*.pug', gulp.series('pug'))
   gulp.watch('./*pug', gulp.series('pug-index'))
 })
 
