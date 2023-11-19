@@ -11,6 +11,8 @@ gulp.task('pug', () => {
     .pipe(gulp.dest('./dist/html'))
 })
 
+// Hoy * 3
+
 gulp.task('pug-index', () => {
   return gulp
     .src('./*.pug')
