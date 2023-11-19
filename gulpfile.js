@@ -20,6 +20,8 @@ gulp.task('pug-index', () => {
     .pipe(gulp.dest('./'))
 })
 
+// Hoy *2
+
 gulp.task('default', () => {
   gulp.watch('./src/pages/**/*.pug', gulp.series('pug'))
   gulp.watch('./*pug', gulp.series('pug-index'))
