@@ -8,10 +8,6 @@ quien es *Marie Tharp* y su biografía.
 
 Puedes ver la página [aquí](https://marietharplegado.000webhostapp.com/).
 
-## Versión
-
-EL proyecto esá actualmente en la versión **1.1.0**.
-
 ## Indice
 
 - [Instalacion](#instalación)
