@@ -6,8 +6,6 @@ de html, css y pug.
 En si es un artículo que habla sobre
 quien es *Marie Tharp* y su biografía.
 
-Puedes ver la página [aquí](https://marietharplegado.000webhostapp.com/).
-
 ## Indice
 
 - [Instalacion](#instalación)
